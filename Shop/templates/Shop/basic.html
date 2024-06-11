@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <title>{% block title %}    {% endblock %}</title>
+    <style>
+      {% block css %}    {% endblock %}
+    </style>
+      <style>
+     .custom-black {
+         background-color: #000000 ;
+    padding: 0.5rem 1rem; /* Add padding for spacing */
+}
+
+.navbar-brand h2 {
+    font-family: 'Brush Script MT', cursive; /* Fancy font for brand */
+     color: #ffb6c1;
+    margin: 0; /* Remove margin */
+}
+
+.navbar-brand h2 i {
+    color: #ffb6c1;; /* Ensure italic text is gold too */
+}
+
+.navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.navbar-brand h2 strong i {
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.navbar-brand h2 strong i:hover {
+    color: #ffb6c1; /* Change color on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Media query for responsive font size */
+@media (max-width: 992px) {
+    .navbar-brand h2 {
+        font-size: 1.5rem; /* Smaller font size on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-brand h2 {
+        font-size: 1.25rem; /* Even smaller font size on smaller screens */
+    }
+}
+
+
+      </style>
+
+  </head>
+<body>
+ <nav class="navbar navbar-expand-lg navbar-dark custom-black">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="/Shop/"><h2><strong><i>MyShopsy :) </i></strong></h2></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#"><i>Home </i><span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Shop/about/"><i>About Us</i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Shop/tracker"><i>TrackingStatus</i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Blog"><i>Blog</i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Shop/contact"><i>Contact Us</i></a>
+            </li>
+
+        </ul>
+
+        <form  method='get' action="/Shop/search/" class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search" id="search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <button type="button" class="btn btn-secondary mx-2" id="popcart" data-container="body" data-toggle="popover"
+                data-placement="bottom" data-html="true" title="Cart for your items in my shopping cart">
+
+
+            Cart(<span id="cart">0</span>)
+        </button>
+    </div>
+  </div>
+</nav>
+
+ {% block body %}    {% endblock %}
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    {% block js %} {% endblock %}
+</body>
+</html>

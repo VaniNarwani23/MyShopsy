@@ -1,0 +1,40 @@
+{% extends  'Shop/basic.html' %}
+
+{% block title %} Contact Us  {% endblock %}
+{% block body %}
+<div class="container my-3">
+  <h1><i>Contact Us For Any Query</i></h1>
+<form action="/Shop/contact/" method = "Post">{% csrf_token %}
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" name="name" placeholder="Enter Your Name">
+  </div>
+  <div class="form-group">
+    <label for="name">Email Id</label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email Id">
+  </div>
+  <div class="form-group">
+    <label for="name">Phone</label>
+    <input type="tel" class="form-control" id="phone" name='phone' placeholder="Enter Your Phone Number">
+  </div>
+  <div class="form-group">
+    <label for="Query"> Hey! How May We Help You ? </label>
+    <textarea class="form-control" id="Query" name="desc" rows="3"></textarea>
+  </div>
+  <button type="Submit" class="btn btn-success">Submit </button>
+
+
+</form>
+
+</div>
+{% endblock %}
+{% block js%}
+<script>
+{% if thank %}
+    alert('Thanks for contacting us.We appreciate your contact and value your feedback.Your inquiry is important to us, and our dedicated customer service team is here to assist you.Best regards  {MyShopsy} Customer Service Team');
+    document.location = "/Shop/contact";
+{% endif %}
+
+
+</script>
+{% endblock %}
