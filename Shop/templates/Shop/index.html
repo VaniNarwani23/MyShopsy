@@ -50,7 +50,7 @@
 <div class="container">
     <!--Slideshow starts here -->
     {% for product, range, nSlides in allProds %}
-    <h4 class="my-4"> <i> <b>Flash Sale On: {{ product.0.category }} - Recommended items</b></i></h4>
+    <h4 class="my-5"> <i> <b>Flash Sale On: {{ product.0.category }} </b></i></h4>
     <div id="demo{{ forloop.counter }}" class="col carousel slide my-3" data-ride="carousel">
         <ul class="carousel-indicators">
             <li data-target="#demo{{ forloop.counter }}" data-slide-to="0" class="active"></li>
