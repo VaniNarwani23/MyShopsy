@@ -7,4 +7,4 @@
 
 
 <h2>About Page </h2>
-![Screenshot 2024-06-12 200122](https://github.com/VaniNarwani23/MyShopsy/assets/139327400/cb063ceb-3b09-406b-b0d1-e1fef4f0694e)
+<img>![Screenshot 2024-06-12 200122](https://github.com/VaniNarwani23/MyShopsy/assets/139327400/cb063ceb-3b09-406b-b0d1-e1fef4f0694e)</img>
