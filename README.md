@@ -16,11 +16,15 @@ Contact Us Page <img>![Screenshot 2024-06-12 200246](https://github.com/VaniNarw
 
 
 
-#_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
-
-
 
 
 
 # Features
 
+Order Management and Order Tracking: Users can track the status of their orders from confirmation to delivery.
+
+Blogging: The platform also includes a blog section where users can explore informative and captivating articles on a wide range of topics. The blog section is designed to provide valuable content to users who seek knowledge and inspiration.
+
+Search Functionality: The platform offers a search feature that enables users to quickly find specific products or blog articles. The search functionality is designed to deliver accurate results based on keywords and relevancy.
+
+Secure Checkout Process: Multi-step checkout with secure payment gateway integration for credit cards, PayPal, and other methods
