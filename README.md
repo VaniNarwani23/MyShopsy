@@ -37,11 +37,11 @@ To set up MyShopsy locally, follow these steps:
 Ensure you have Python 3.10 installed on your system.
 Clone the repository:
 ```
-git clone https://github.com/Abhishek676062/My-Awesome-cart.git
+git clone https://github.com/VaniNarwani23/MyShopsy.git
 ```
 Navigate to the project directory:
 ```
-cd My-Awesome-cart
+cd MyShopsy
 ```
 Create a virtual environment:
 ```
