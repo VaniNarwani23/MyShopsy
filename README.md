@@ -33,7 +33,7 @@ Secure Checkout Process: Multi-step checkout with secure payment gateway integra
 
 
 # Setup Instructions
-To set up My Awesome Cart locally, follow these steps:
+To set up MyShopsy locally, follow these steps:
 Ensure you have Python 3.10 installed on your system.
 Clone the repository:
 ```
