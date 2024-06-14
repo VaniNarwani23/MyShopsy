@@ -28,3 +28,44 @@ Blogging: The platform also includes a blog section where users can explore info
 Search Functionality: The platform offers a search feature that enables users to quickly find specific products or blog articles. The search functionality is designed to deliver accurate results based on keywords and relevancy.
 
 Secure Checkout Process: Multi-step checkout with secure payment gateway integration for credit cards, PayPal, and other methods
+
+
+
+
+# Setup Instructions
+To set up My Awesome Cart locally, follow these steps:
+Ensure you have Python 3.10 installed on your system.
+Clone the repository:
+```
+git clone https://github.com/Abhishek676062/My-Awesome-cart.git
+```
+Navigate to the project directory:
+```
+cd My-Awesome-cart
+```
+Create a virtual environment:
+```
+python3 -m venv myenv
+```
+Activate the virtual environment:
+For Windows:
+```
+myenv\Scripts\activate
+```
+For macOS/Linux:
+```
+source myenv/bin/activate
+```
+Install the project dependencies:
+```
+pip install -r requirements.txt
+```
+Apply the database migrations:
+```
+python manage.py migrate
+```
+Start the development server:
+```
+python manage.py runserver
+```
+Open your web browser and visit http://localhost:8000 to access MyShopsy
